@@ -1,0 +1,8 @@
+{
+  "name": "total-being-reset",
+  "version": "1.0.0",
+  "scripts": {
+    "postinstall": "npm install --prefix server && npm install --prefix client",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  }
+}
