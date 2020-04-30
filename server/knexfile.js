@@ -1,3 +1,6 @@
+const dotenv = require('dotenv');
+dotenv.config();
+
 module.exports = {
 
   development: {
@@ -26,6 +29,9 @@ module.exports = {
     connection: process.env.DATABASE_URL,
     migrations: {
       directory: './db/migrations'
+    },
+    seeds: {
+      directory: './db/seeds/prod'
     },
     useNullAsDefault: true
   }

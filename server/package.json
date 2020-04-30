@@ -8,8 +8,7 @@
     "server": "nodemon server.js",
     "client": "npm run start --prefix ../client",
     "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
-    "test": "jest --config ./jest.config.js --forceExit --coverage --runInBand",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix ../client && npm run build --prefix ../client"
+    "test": "jest --config ./jest.config.js --forceExit --coverage --runInBand"
   },
   "keywords": [],
   "author": "",
